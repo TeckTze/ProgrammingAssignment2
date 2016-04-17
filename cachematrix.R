@@ -2,6 +2,11 @@
 ## functions do
 
 ## Write a short comment describing this function
+# Functions does the following:
+# 1) Setting cached matrix
+# 2) Getting cached matrix
+# 3) Setting inverse of matrix
+# 4) Getting inverse of matrix
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
@@ -16,10 +21,12 @@ makeCacheMatrix <- function(x = matrix()) {
        setInverse = setInverse,
        getInverse = getInverse)
 }
-
+cach
 
 ## Write a short comment describing this function
-
+# Check cached matrix,
+# if solved, get cached matrix
+# else, solve inverse of matrix
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv <- x$getInverse()
